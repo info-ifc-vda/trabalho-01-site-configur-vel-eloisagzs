@@ -1,0 +1,169 @@
+/*#322030 roxo escuro*/
+/*#725b75 roxo claro*/
+/*#c1a2a0 bege*/
+/*#e3cebd creme*/
+* {
+    font-family: "Montserrat";
+    font-size: medium;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 500px;
+}
+
+
+h1, h2, h3, h4 {
+    font-family: "Chelsea Market";
+   
+}
+
+.container-fluid a{
+    color: #725b75;
+}
+
+header {
+    color: #f7e4c6;
+    height: 500px;
+    background-image: url(img/faixa\ \(2000\ x\ 400\ px\).png);
+}
+
+.principal {
+    background-color: #322030;
+    color: #fcfdeb;
+}
+
+.curiosidades{
+    background-image: url(img/patinhas.png);
+}
+
+.carrossel{
+    background-color: #c1a2a0;
+}
+
+footer{
+    background-color: #322030;
+}
+
+.container-slider {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    gap: 1rem;
+}
+
+.container-images {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 750px;
+}
+
+.container-images img{
+    border: 3px solid #725b75;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.slider {
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.on {
+    opacity: 1;
+
+}
+
+#prev-button,
+#next-button {
+    border: none;
+    background-color: transparent;
+}
+
+.container-ac {
+    display: flex;
+    align-items: center;
+    background-image: url(img/patinhas.png);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.accordion {
+    background-color: #725b75;
+    border-radius: 5px;
+    padding: 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 1100px;
+}
+
+.accordion-header {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fcfdeb;
+}
+
+.accordion-header span {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.accordion-body {
+    color: #fcfdeb;
+    font-size: 14px;
+
+    max-height: 0;
+    overflow: hidden;
+
+    opacity: 0;
+
+    transition: all 0.3s ease;
+}
+
+.accordion.active .accordion-body {
+    max-height: 200px;
+    opacity: 1;
+    padding-top: 10px;
+}
+
+.accordion i {
+    transition: 0.3s;
+}
+
+.accordion.active i {
+    transform: rotate(180deg);
+}
+
+.roxo-escuro {
+    color:#322030;
+}
+
+.roxo-claro {
+    color: #725b75;
+}
+
+.bege {
+    color: #c1a2a0;
+}
+
+.creme {
+    color: #e3cebd;
+}
+
+.off-white{
+    color: #fcfdeb;
+}
